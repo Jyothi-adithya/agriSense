@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans antialiased;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  /* Sidebar nav item */
+  .nav-item {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium
+           text-gray-600 hover:bg-agri-green-50 hover:text-agri-green-800
+           transition-colors duration-150 cursor-pointer;
+  }
+
+  .nav-item.active {
+    @apply bg-agri-green-800 text-white hover:bg-agri-green-700 hover:text-white;
+  }
+
+  /* KPI card */
+  .kpi-card {
+    @apply bg-white rounded-xl border border-gray-100 shadow-sm p-5;
+  }
+
+  /* Chart card */
+  .chart-card {
+    @apply bg-white rounded-xl border border-gray-100 shadow-sm p-5;
+  }
+
+  /* Primary button */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg
+           bg-agri-green-700 text-white text-sm font-medium
+           hover:bg-agri-green-800 transition-colors duration-150;
+  }
+
+  /* Secondary button */
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg
+           bg-white text-gray-700 text-sm font-medium border border-gray-200
+           hover:bg-gray-50 transition-colors duration-150;
+  }
+
+  /* Danger button */
+  .btn-danger {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg
+           bg-red-600 text-white text-sm font-medium
+           hover:bg-red-700 transition-colors duration-150;
+  }
+
+  /* Input */
+  .input-field {
+    @apply w-full px-3 py-2 rounded-lg border border-gray-200 text-sm
+           focus:outline-none focus:ring-2 focus:ring-agri-green-500 focus:border-transparent
+           placeholder-gray-400 bg-white;
+  }
+
+  /* Select */
+  .select-field {
+    @apply w-full px-3 py-2 rounded-lg border border-gray-200 text-sm
+           focus:outline-none focus:ring-2 focus:ring-agri-green-500 focus:border-transparent
+           bg-white text-gray-700;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-green {
+    @apply badge bg-agri-green-100 text-agri-green-800;
+  }
+
+  .badge-blue {
+    @apply badge bg-blue-100 text-blue-800;
+  }
+
+  .badge-yellow {
+    @apply badge bg-yellow-100 text-yellow-800;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #e5e7eb transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #e5e7eb;
+    border-radius: 2px;
+  }
+}

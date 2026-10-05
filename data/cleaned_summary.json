@@ -1,0 +1,105 @@
+{
+  "source_csv": "C:\\agriSense\\Crop_recommendation.csv",
+  "original_records": 2200,
+  "missing_value_drops": 0,
+  "duplicate_drops": 0,
+  "range_violation_drops": 0,
+  "final_valid_records": 2200,
+  "unique_crops": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "crop_counts": {
+    "apple": 100,
+    "banana": 100,
+    "blackgram": 100,
+    "chickpea": 100,
+    "coconut": 100,
+    "coffee": 100,
+    "cotton": 100,
+    "grapes": 100,
+    "jute": 100,
+    "kidneybeans": 100,
+    "lentil": 100,
+    "maize": 100,
+    "mango": 100,
+    "mothbeans": 100,
+    "mungbean": 100,
+    "muskmelon": 100,
+    "orange": 100,
+    "papaya": 100,
+    "pigeonpeas": 100,
+    "pomegranate": 100,
+    "rice": 100,
+    "watermelon": 100
+  },
+  "ph_categories": {
+    "acidic": 1203,
+    "neutral": 812,
+    "alkaline": 185
+  },
+  "column_stats": {
+    "nitrogen": {
+      "min": 0.0,
+      "max": 140.0,
+      "mean": 50.5518,
+      "std": 36.9173
+    },
+    "phosphorus": {
+      "min": 5.0,
+      "max": 145.0,
+      "mean": 53.3627,
+      "std": 32.9859
+    },
+    "potassium": {
+      "min": 5.0,
+      "max": 205.0,
+      "mean": 48.1491,
+      "std": 50.6479
+    },
+    "temperature": {
+      "min": 8.8257,
+      "max": 43.6755,
+      "mean": 25.6162,
+      "std": 5.0637
+    },
+    "humidity": {
+      "min": 14.258,
+      "max": 99.9819,
+      "mean": 71.4818,
+      "std": 22.2638
+    },
+    "ph": {
+      "min": 3.5048,
+      "max": 9.9351,
+      "mean": 6.4695,
+      "std": 0.7739
+    },
+    "rainfall": {
+      "min": 20.2113,
+      "max": 298.5601,
+      "mean": 103.4637,
+      "std": 54.9584
+    }
+  }
+}
